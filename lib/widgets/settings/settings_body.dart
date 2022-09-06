@@ -26,7 +26,7 @@ class _SettingsBodyState extends State<SettingsBody> {
         leading: IconButton(
             onPressed: () {},
             icon: const Icon(
-              Icons.arrow_back,
+              Icons.arrow_back_ios_new_rounded,
               color: Color(0xFFA2A2B5),
             )),
       ),
@@ -34,14 +34,9 @@ class _SettingsBodyState extends State<SettingsBody> {
         padding: const EdgeInsets.only(left: 16, top: 25, right: 16),
         child: ListView(
           children: [
-            Container(
-              width: 110,
-              height: 110,
-              decoration: BoxDecoration(
-                  image: DecorationImage(
-                image: AssetImage(settingsArrayList[0].settingsImageUrl),
-                // fit: BoxFit.cover
-              )),
+            buildProfileImage(),
+            const SizedBox(
+              height: 7,
             ),
             Text(
               settingsArrayList[0].imageHeading,
@@ -67,13 +62,18 @@ class _SettingsBodyState extends State<SettingsBody> {
             const SizedBox(
               height: 25,
             ),
-            const SizedBox(
-              height: 50.0,
-              width: 100.0,
-              child: FloatingActionButton.extended(
-                  onPressed: null,
-                  label: Text('Edit Profile'),
-                  backgroundColor: Color.fromRGBO(255, 255, 255, 0.1)),
+            MaterialButton(
+              onPressed: () {},
+              color: Color.fromRGBO(255, 255, 255, 0.1),
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(50)),
+              child: Text(
+                'Edit Profile',
+                style: TextStyle(
+                    color: Colors.white,
+                    fontFamily: GoogleFonts.inter().fontFamily,
+                    fontWeight: FontWeight.w400),
+              ),
             ),
             const SizedBox(
               height: 25,
@@ -123,5 +123,11 @@ class _SettingsBodyState extends State<SettingsBody> {
     );
   }
 
-  
+  Widget buildProfileImage() => CircleAvatar(
+        radius: 37.0,
+        child: ClipRRect(
+          child: Image.asset(settingsArrayList[0].settingsImageUrl),
+          borderRadius: BorderRadius.circular(50.0),
+        ),
+      );
 }

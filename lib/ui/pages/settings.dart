@@ -17,6 +17,5 @@ class _SettingsPageState extends State<SettingsPage> {
     );
   }
 
-
-Widget settingsBody() => const SettingsBody();
+  Widget settingsBody() => const SettingsBody();
 }

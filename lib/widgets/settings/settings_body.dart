@@ -129,6 +129,7 @@ class _SettingsBodyState extends State<SettingsBody> {
   Widget buildProfileImage() => CircleAvatar(
         radius: 37.0,
         child: ClipRRect(
+          // ignore: sort_child_properties_last
           child: Image.asset(settingsArrayList[0].settingsImageUrl),
           borderRadius: BorderRadius.circular(50.0),
         ),

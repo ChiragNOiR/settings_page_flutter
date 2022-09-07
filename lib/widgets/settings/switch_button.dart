@@ -1,9 +1,13 @@
+// ignore_for_file: import_of_legacy_library_into_null_safe
+
 import 'package:flutter/material.dart';
 import 'package:custom_switch/custom_switch.dart';
 
 class SwitchScreen extends StatefulWidget {
+  const SwitchScreen({super.key});
+
   @override
-  SwitchClass createState() => new SwitchClass();
+  SwitchClass createState() => SwitchClass();
 }
 
 class SwitchClass extends State {

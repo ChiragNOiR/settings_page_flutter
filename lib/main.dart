@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'ui/app_widgets.dart';
 
 void main() {

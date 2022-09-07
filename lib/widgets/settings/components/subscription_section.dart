@@ -19,13 +19,26 @@ Column SubscriptionsSectionMethod() {
                 height: 30,
               ),
               iconColor: Colors.grey,
-              title: Text(
-                'Sorting',
-                style: TextStyle(
-                    fontSize: 15,
-                    fontFamily: GoogleFonts.inter().fontFamily,
-                    fontWeight: FontWeight.w600,
-                    color: const Color(0xFFFFFFFF)),
+              title: Wrap(
+                spacing: 141,
+                children: [
+                  Text(
+                    'Sorting',
+                    style: TextStyle(
+                        fontSize: 15,
+                        fontFamily: GoogleFonts.inter().fontFamily,
+                        fontWeight: FontWeight.w600,
+                        color: const Color(0xFFFFFFFF)),
+                  ),
+                  Text(
+                    'Date',
+                    style: TextStyle(
+                        fontSize: 13,
+                        fontFamily: GoogleFonts.inter().fontFamily,
+                        fontWeight: FontWeight.w500,
+                        color: const Color(0xFFA2A2B5)),
+                  ),
+                ],
               ),
               trailing: const Icon(Icons.arrow_forward_ios, size: 15),
             ),
@@ -35,13 +48,26 @@ Column SubscriptionsSectionMethod() {
                 height: 30,
               ),
               iconColor: Colors.grey,
-              title: Text(
-                'Summary',
-                style: TextStyle(
-                    fontSize: 15,
-                    fontFamily: GoogleFonts.inter().fontFamily,
-                    fontWeight: FontWeight.w600,
-                    color: const Color(0xFFFFFFFF)),
+              title: Wrap(
+                spacing: 105,
+                children: [
+                  Text(
+                    'Summary',
+                    style: TextStyle(
+                        fontSize: 15,
+                        fontFamily: GoogleFonts.inter().fontFamily,
+                        fontWeight: FontWeight.w600,
+                        color: const Color(0xFFFFFFFF)),
+                  ),
+                  Text(
+                    'Average',
+                    style: TextStyle(
+                        fontSize: 13,
+                        fontFamily: GoogleFonts.inter().fontFamily,
+                        fontWeight: FontWeight.w500,
+                        color: const Color(0xFFA2A2B5)),
+                  ),
+                ],
               ),
               trailing: const Icon(Icons.arrow_forward_ios, size: 15),
             ),
@@ -51,13 +77,26 @@ Column SubscriptionsSectionMethod() {
                 height: 30,
               ),
               iconColor: Colors.grey,
-              title: Text(
-                'Default Currency',
-                style: TextStyle(
-                    fontSize: 15,
-                    fontFamily: GoogleFonts.inter().fontFamily,
-                    fontWeight: FontWeight.w600,
-                    color: const Color(0xFFFFFFFF)),
+              title: Wrap(
+                spacing: 55,
+                children: [
+                  Text(
+                    'Default Currency',
+                    style: TextStyle(
+                        fontSize: 15,
+                        fontFamily: GoogleFonts.inter().fontFamily,
+                        fontWeight: FontWeight.w600,
+                        color: const Color(0xFFFFFFFF)),
+                  ),
+                  Text(
+                    'USD (\$)',
+                    style: TextStyle(
+                        fontSize: 13,
+                        fontFamily: GoogleFonts.inter().fontFamily,
+                        fontWeight: FontWeight.w500,
+                        color: const Color(0xFFA2A2B5)),
+                  ),
+                ],
               ),
               trailing: const Icon(Icons.arrow_forward_ios, size: 15),
             ),

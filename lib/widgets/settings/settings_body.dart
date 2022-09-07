@@ -60,19 +60,22 @@ class _SettingsBodyState extends State<SettingsBody> {
                   color: const Color(0xFFA2A2B5)),
             ),
             const SizedBox(
-              height: 25,
+              height: 13,
             ),
-            MaterialButton(
-              onPressed: () {},
-              color: Color.fromRGBO(255, 255, 255, 0.1),
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(50)),
-              child: Text(
-                'Edit Profile',
-                style: TextStyle(
-                    color: Colors.white,
-                    fontFamily: GoogleFonts.inter().fontFamily,
-                    fontWeight: FontWeight.w400),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(120, 0, 120, 0),
+              child: MaterialButton(
+                onPressed: () {},
+                color: const Color.fromRGBO(255, 255, 255, 0.1),
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(50)),
+                child: Text(
+                  'Edit Profile',
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: GoogleFonts.inter().fontFamily,
+                      fontWeight: FontWeight.w400),
+                ),
               ),
             ),
             const SizedBox(

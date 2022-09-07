@@ -50,6 +50,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.5"
+  custom_switch:
+    dependency: "direct main"
+    description:
+      name: custom_switch
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.0.1"
   fake_async:
     dependency: transitive
     description:
@@ -247,13 +254,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.1.1"
-  switcher_button:
-    dependency: "direct main"
-    description:
-      name: switcher_button
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.0.4"
   term_glyph:
     dependency: transitive
     description:

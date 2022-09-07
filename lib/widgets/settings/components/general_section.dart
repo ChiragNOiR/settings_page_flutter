@@ -1,6 +1,6 @@
+import 'package:build_two/widgets/settings/switch_button.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:switcher_button/switcher_button.dart';
 
 // ignore: non_constant_identifier_names
 Column GeneralSectionMethod() {
@@ -19,16 +19,29 @@ Column GeneralSectionMethod() {
                 'assets/icons/security.png',
                 height: 30,
               ),
-              iconColor: Colors.grey,
-              title: Text(
-                'Security',
-                style: TextStyle(
-                    fontSize: 15,
-                    fontFamily: GoogleFonts.inter().fontFamily,
-                    fontWeight: FontWeight.w600,
-                    color: const Color(0xFFFFFFFF)),
+              title: Wrap(
+                spacing: 122,
+                children: [
+                  Text(
+                    'Security',
+                    style: TextStyle(
+                        fontSize: 15,
+                        fontFamily: GoogleFonts.inter().fontFamily,
+                        fontWeight: FontWeight.w600,
+                        color: const Color(0xFFFFFFFF)),
+                  ),
+                  Text(
+                    'FaceID',
+                    style: TextStyle(
+                        fontSize: 13,
+                        fontFamily: GoogleFonts.inter().fontFamily,
+                        fontWeight: FontWeight.w500,
+                        color: const Color(0xFFA2A2B5)),
+                  ),
+                ],
               ),
               trailing: const Icon(Icons.arrow_forward_ios, size: 15),
+              iconColor: Colors.grey,
             ),
             ListTile(
               leading: Image.asset(
@@ -44,14 +57,7 @@ Column GeneralSectionMethod() {
                     fontWeight: FontWeight.w600,
                     color: const Color(0xFFFFFFFF)),
               ),
-              trailing: SwitcherButton(
-                value: true,
-                size: 40,
-                onColor: Colors.blue,
-                offColor: Colors.white,
-                onChange: (value) {},
-              ),
-              // trailing: const Icon(Icons.arrow_forward, size: 15),
+              trailing: SwitchScreen(),
             ),
           ],
         ),
